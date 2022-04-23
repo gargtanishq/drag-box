@@ -1,0 +1,83 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(-45deg, #246e5d, #96858c, #2e5c6d, #c4c3c3);
+  background-size: 400% 400%;
+  animation: gradient 9s ease-in-out infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.wrapper {
+  height: 100%;
+}
+
+.header-keys {
+  color: rgba(255, 255, 255, 0.89);
+  border: 1px solid hsl(0, 10%, 59%);
+  background-color: rgba(216, 1, 1, 0.822);
+  border-radius: 5px;
+  padding: 2px 5px;
+}
+
+.positions {
+  font-size: 1.4rem;
+  box-shadow: 1px 2px 5px 1px #8f989b;
+  padding: 4px;
+  border-radius: 5px;
+  background-color: #78b1c679;
+}
+
+button {
+  background-color: #232a55;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover {
+  box-shadow: 0 16px 16px 0 rgb(0 0 0 / 50%), 0 17px 50px 0 rgb(0 0 0 / 50%);
+  color: #bcc6cf;
+  cursor: pointer;
+}
+
+.pageTwo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  margin: 3rem 0;
+}
+
+a {
+  font-size: 1.2rem;
+  outline: none;
+  text-decoration: none;
+  color: white;
+}
+
+.pg-span {
+  color: rgb(208, 212, 215);
+}
